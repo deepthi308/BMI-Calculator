@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    color: rgb(129, 34, 0);
+    font-weight: 700;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: coral;
+}
+
+.container{
+    padding: 20px;
+    background-color: rgba(225, 225, 225, 0.3);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 20px;
+    box-sizing: border-box;
+    width: 550px;
+    height: 550px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.438);
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input{
+    height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    /* text-align: center; */
+    border-radius: 3px;
+    padding: 4px 8px;
+    color: rgb(202, 67, 18);
+}
+
+.title{
+    text-align: center;
+}
+
+.bmi{
+    height: 35px;
+}
+
+.button{
+    height: 35px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    background-color: rgb(240, 112, 52);
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.438);
+}
+
+.button:hover{
+    background-color: rgb(243, 79, 20);
+}
+
+.condition{
+    background-color: transparent;
+    border-bottom: 2px solid white;
+}
+
+.warn{
+    color: rgb(231, 4, 4);
+    font-size: 14px;
+    display: none;
+}
+
+@media (max-width:320px)
+{
+    .container{
+        gap: 13px;
+        width: 300px;
+        margin: 10px;
+        height: 400px;
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+    .bmi{
+        height: 25px;
+    }
+
+    label{
+        font-size: 14px;
+    }
+
+    .button{
+        font-size: 14px;
+        height: 25px;
+        padding: 4px;
+    }
+
+    input{
+        height: 25px;
+    }
+
+    .warn{
+        font-size: 12px;
+    }
+
+    .text-container{
+        gap: 13px;
+    }
+}
+
+@media (max-width:600px) {
+    .container {
+        gap: 13px;
+        width: 400px;
+        margin: 10px;
+        height: 400px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .bmi {
+        height: 29px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    .button {
+        font-size: 15px;
+        height: 29px;
+        padding: 8px;
+    }
+
+    input {
+        height: 25px;
+    }
+
+    .warn {
+        font-size: 12px;
+    }
+
+    .text-container {
+        gap: 13px;
+    }
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Body Mass Index (BMI) Calculator</h1>
+        <div class="text-container">
+            <label for="height">Your Height (cm) :</label>
+            <input type="text" id="height" class="height">
+        </div>
+        <div class="text-container">
+            <label for="weight">Your Weight (kg) :</label>
+            <input type="text" id="weight" class="weight">
+        </div>
+        <p class="warn">Please enter the values</p>
+        <button class="button">Compute BMI</button>
+        <input type="text" id="bmi" class="bmi">
+        <div class="text-container">
+            <label for="condition">Weight Condition :</label>
+            <input disabled type="text" id="condition" class="condition">
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
